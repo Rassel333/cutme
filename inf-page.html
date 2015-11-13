@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="UTF-8">
+	<title>Info</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/modal-index.css">
+    <link rel="stylesheet" href="css/inf.css">
+    <script type="text/javascript" src="js/common.js"></script>
+     <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.tag').click(function(){
+               $('.same-link-list').slideDown('fast'); 
+                $('.link-container').after('<p class="same-topic"></p>');
+            });
+            $('.prev').click(function(e){
+                e.preventDefault ? e.preventDefault() : event.returnValue = false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="main-container">
+        <header id="header" class="clearfix">
+            <div class="head-container">	
+                <div class="head-logo">
+                    <img class="logo-p1" src="img/logo-p1.png" alt="" width="122px" height="40px">
+                    <img class="logo-p2" src="img/logo-p2.png" alt="" width="28px" height="40px">
+                </div> 
+                <a href="" class="mobile"><span></span></a>
+                <ul class="auth clearfix">
+                        <li><a href="" class="signin">sign in</a></li>
+                        <li><a href="" class="signup">sign up</a></li>
+                </ul>
+            </div>	
+        </header>
+            <div class="container">
+                <div class="main-logo clearfix">
+                    <img src="img/main-logo.png" alt="" >
+                </div>
+
+                <p class="topic">Requested link</p>
+                    <div class="link-container">
+                        <ul class="link-list">
+                            <li class="shortened-link ">
+                                   <div class="url-content selected">
+                                    <div class="full-link">
+                                        <a class="title-link" href="https://www.youtube.com/feed/subscriptions">
+                                            youtube.com/feed/subscriptions/
+                                        </a>
+                                    </div>
+                                    <div class="cut-link " >
+                                        <a href="#" class="cut prev">
+                                            http://cut.me/1HQcN
+                                        </a>    
+                                    </div>
+                                    
+                                    </div> 
+                                 <div class="url-info">
+                                  <div class="info-container">
+                                   <div class="info_desc">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                   </div>
+                                   <div class="info-row">
+                                    <div class="info_tags">
+                                         <span class="info-pill">
+                                        <a href="#" class="tag prev">
+                                            fun
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="info-pill">
+                                        <a href="#" class="tag prev">
+                                            videos
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="info-pill">
+                                        <a href="#" class="tag prev">
+                                            public
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="info-pill">
+                                        <a href="#" class="tag prev">
+                                            fun
+                                        </a>
+                                       
+                                    </span>
+                                    <span class="info-pill">
+                                        <a href="#" class="tag prev">
+                                            videos
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="info-pill">
+                                        <a href="#" class="tag prev">
+                                            public
+                                        </a>
+                                    </span>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>       
+                                                                  
+                            </li>
+                            
+                        </ul>         
+                    </div>
+            
+                    <div class="same-link-container">
+                        <ul class="same-link-list">
+                            <li class="same-shortened-link ">
+                                   <div class="same-url-content selected">
+                                    <div class="same-full-link">
+                                        <a class="same-title-link" href="https://www.youtube.com/feed/subscriptions">
+                                            youtube.com/feed/subscriptions/
+                                        </a>
+                                    </div>
+                                    <div class="same-cut-link " >
+                                        <a href="#" class="same-cut prev">
+                                            http://cut.me/1HQcN
+                                        </a>    
+                                    </div>
+                                    </div> 
+                                 <div class="same-url-info">
+                                  <div class="same-info-container">
+                                   <div class="same-info_desc">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                   </div>
+                                   <div class="same-info-row">
+                                    <div class="same-info_tags">
+                                         <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            fun
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            videos
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            public
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            fun
+                                        </a>
+                                       
+                                    </span>
+                                    <span class="info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            videos
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            public
+                                        </a>
+                                    </span>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>       
+                                                                  
+                            </li>
+                            
+                            <li class="same-shortened-link ">
+                                   <div class="same-url-content selected">
+                                    <div class="same-full-link">
+                                        <a class="same-title-link" href="https://www.youtube.com/feed/subscriptions">
+                                            youtube.com/feed/subscriptions/
+                                        </a>
+                                    </div>
+                                    <div class="same-cut-link " >
+                                        <a href="#" class="same-cut prev">
+                                            http://cut.me/1HQcN
+                                        </a>    
+                                    </div>
+                                    </div> 
+                                 <div class="same-url-info">
+                                  <div class="same-info-container">
+                                   <div class="same-info_desc">
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                   </div>
+                                   <div class="same-info-row">
+                                    <div class="same-info_tags">
+                                         <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            fun
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            videos
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            public
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            fun
+                                        </a>
+                                       
+                                    </span>
+                                    <span class="info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            videos
+                                        </a>
+                                        
+                                    </span>
+                                    <span class="same-info-pill">
+                                        <a href="#" class="same-tag prev">
+                                            public
+                                        </a>
+                                    </span>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>       
+                                                                  
+                            </li>
+                        </ul>         
+                    </div>
+                </div>
+                
+                <div id="signup-form">
+                  <span id="modal_close"><i class="fa fa-times"></i></span> 
+                  <form action="" method="post">
+                      <div class="signup-container">
+                        <div class="field-item">
+                            <label for="username" class="item-label">Username</label>
+                            <input type="text" name="username" class="text" placeholder="username">
+                        </div>
+                         <div class="field-item">
+                            <label for="password" class="item-label">Password</label>
+                            <input type="password" name="password" class="text" placeholder="6-20 characters">
+                        </div>
+                         <div class="field-item">
+                            <label for="mail" class="item-label">E-mail</label>
+                            <input type="e-mail" name="mail" class="text" placeholder="e-mail">
+                        </div>
+                      </div>
+                      <div class="sign-but">
+                          <input type="submit" class="but" value="CREATE ACCOUNT">
+                      </div>
+                  </form>
+                </div>
+                <div id="overlay"></div>
+                
+                <div id="signin-form">
+                  <span id="modal_close"><i class="fa fa-times"></i></span> 
+                  <form action="" method="post">
+                      <div class="signin-container">
+                        <div class="field-item">
+                            <label for="username" class="item-label">Username</label>
+                            <input type="text" name="username" class="text" placeholder="username">
+                        </div>
+                         <div class="field-item">
+                            <label for="password" class="item-label">Password</label>
+                            <input type="password" name="password" class="text" placeholder="6-20 characters">
+                        </div>
+                      </div>
+                      <div class="sign-but">
+                          <input type="submit" class="but" value="SIGN IN">
+                      </div>
+                  </form>
+                </div>
+        <footer id="footer" class="clearfix">
+           <div class="footer-container">
+               <div class="footer-logo">
+                   <img src="img/logo-p1.png" alt="" width="122px" height="40px">
+                    <img class="p2" src="img/logo-p2.png" alt="" width="28px" height="40px">
+               </div>
+               <div class="copyright clearfix">
+                   <p>Copyright 2015</p>
+                   <p>All rights are reserved</p>
+               </div>
+           </div>        
+        </footer>
+    </div>
+</body>
+</html>

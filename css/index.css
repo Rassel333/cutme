@@ -1,0 +1,139 @@
+.tabs{
+    width: 700px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.tabbed > input{
+    display: none;    
+}
+.tabbed > label{
+    background-color: #22557F;
+    color: #fff;
+    text-align: center;
+    font: 1.7em 'Arial Black' sans-serif;  
+    line-height: 1em;
+    display: block;
+    width: 49%;
+    padding: 15px 0;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+
+
+.tabbed >label:nth-of-type(1){    
+    float: left;
+}
+.tabbed >label:nth-of-type(2){    
+    float: right;
+}
+.tabbed >label:hover{
+    background-color: #95b0d0;
+    
+}
+.tabbed >input:checked + label{
+    background-color: #95b0d0;
+    color: #325986;
+    border-bottom: 3px solid #22557F;
+}
+.tabs-content{
+    clear: both;
+}
+.tabs-content>div{
+    width: 700px;
+    background-color: #95b0d0;
+    color: #325986;
+    font: 0.95em 'Arial Black' sans-serif;
+    position: absolute;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    -webkit-transition: opacity 0.3s ;
+    -moz-transition: opacity 0.3s ;
+    -ms-transition: opacity 0.3s ;
+    -o-transition: opacity 0.3s ;
+    transition: opacity 0.3s ;
+    opacity: 0;
+    z-index: 0;
+    margin-bottom: 10px;
+}
+.tabs-content>div h2{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+#tab1:checked ~.tabs-content>div:nth-of-type(1),
+#tab2:checked ~.tabs-content>div:nth-of-type(2){
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    z-index: 1; 
+}
+
+@media (max-width:800px){
+    .tabs{
+        width: 570px;
+    }
+    .tabbed > label{
+        font-size: 1.5em;
+        padding: 12px 0;
+    }
+    .tabs-content>div{
+        width: 570px;                
+    }
+}
+
+@media (max-width:620px){
+    .tabs{
+        width: 430px;
+    }
+    .tabbed > label{
+        padding: 12px 0;
+    }
+    .tabs-content>div{
+        width: 430px;  
+        
+    }
+}
+
+@media (max-width:480px){
+    .tabs{width:340px; height: 100% }
+    .tabbed > label{display: none}
+    .tabs-content > div{
+        width: 320px;
+        padding: 0px 10px 20px;
+        position: relative;
+        opacity: 1;
+        margin: auto;
+        font-size: 0.9em;
+        line-height: 1.3em;
+        margin-bottom: 0;
+        border-bottom: 3px solid #22557F;
+    }
+    .tabs-content>div:last-child{
+        border-bottom: none;
+    }
+}
+@media (max-width:370px){
+    .tabs{width:270px;}
+    .tabs-content>div{
+        width: 270px;
+        font-size: 0.7em;
+    }
+}
+
+
+
+
+
+

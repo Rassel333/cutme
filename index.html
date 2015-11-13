@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="UTF-8">
+	<title>main</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modal-index.css">
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header id="header" class="clearfix">
+            <div class="head-container">	
+                <div class="head-logo">
+                    <img class="logo-p1" src="img/logo-p1.png" alt="" width="122px" height="40px">
+                    <img class="logo-p2" src="img/logo-p2.png" alt="" width="28px" height="40px">
+                </div> 
+                <a href="" class="mobile"><span></span></a>
+                <ul class="auth clearfix">
+                        <li><a href="" class="signin">sign in</a></li>
+                        <li><a href="" class="signup">sign up</a></li>
+                </ul>
+            </div>	
+        </header>
+            <div class="container">
+                <div class="main-logo clearfix">
+                    <img src="img/main-logo.png" alt="" >
+                </div>
+
+
+                <div class="tabs ">
+                    <div class="tabbed clearfix">
+                    <input type="radio" name="tabs" id="tab1" checked>
+                    <label for="tab1">
+                        <p><i class="fa fa-question"></i></p>
+                        <p>What is cutme?</p>                
+                    </label>
+                    <input type="radio" name="tabs" id="tab2">
+                    <label for="tab2">
+                        <p><i class="fa fa-cogs"></i></p>
+                        <p>How to use</p>
+                    </label>
+                    <div class="tabs-content">
+                         <div><h2>What is cutme?</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem odio dignissim nulla, a condimentum sem neque sed ligula. Maecenas id risus eros, eget porttitor metus. Quisque pellentesque neque dignissim nisl pellentesque vitae tempus urna eleifend. Nullam egestas, neque id placerat luctus, nibh velit pharetra nulla, vel pretium justo massa ut elit. Vivamus nec auctor nunc.</p></div>
+          <div><h2>How to use </h2><p>Maecenas dictum, urna ut consequat condimentum, est dui commodo diam, ac pretium dui ante eu quam. Curabitur posuere metus nec tellus venenatis placerat. Ut egestas neque in odio vulputate gravida. In at justo ac est laoreet eleifend vel quis arcu. Aliquam erat volutpat. Proin vitae vehicula neque. Nam tempus erat ac ante tincidunt tincidunt. Pellentesque eu nibh sapien. Nunc augue magna, lacinia eget congue eget, mattis id tortor. Fusce id vestibulum neque. Proin tincidunt tellus ut risus lobortis cursus. Duis sit amet urna vel sapien ullamcorper varius.</p></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div id="signup-form">
+                  <span id="modal_close"><i class="fa fa-times"></i></span> 
+                  <form action="" method="post">
+                      <div class="signup-container">
+                        <div class="field-item">
+                            <label for="username" class="item-label">Username</label>
+                            <input type="text" name="username" class="text" placeholder="username">
+                        </div>
+                         <div class="field-item">
+                            <label for="password" class="item-label">Password</label>
+                            <input type="password" name="password" class="text" placeholder="6-20 characters">
+                        </div>
+                         <div class="field-item">
+                            <label for="mail" class="item-label">E-mail</label>
+                            <input type="e-mail" name="mail" class="text" placeholder="e-mail">
+                        </div>
+                      </div>
+                      <div class="sign-but">
+                          <input type="submit" class="but" value="CREATE ACCOUNT">
+                      </div>
+                  </form>
+                </div>
+                <div id="overlay"></div>
+                
+                <div id="signin-form">
+                  <span id="modal_close"><i class="fa fa-times"></i></span> 
+                  <form action="" method="post">
+                      <div class="signin-container">
+                        <div class="field-item">
+                            <label for="username" class="item-label">Username</label>
+                            <input type="text" name="username" class="text" placeholder="username">
+                        </div>
+                         <div class="field-item">
+                            <label for="password" class="item-label">Password</label>
+                            <input type="password" name="password" class="text" placeholder="6-20 characters">
+                        </div>
+                      </div>
+                      <div class="sign-but">
+                          <input type="submit" class="but" value="SIGN IN">
+                      </div>
+                  </form>
+                </div>
+               
+        <footer id="footer" class="clearfix">
+           <div class="footer-container">
+               <div class="footer-logo">
+                   <img src="img/logo-p1.png" alt="" width="122px" height="40px">
+                    <img class="p2" src="img/logo-p2.png" alt="" width="28px" height="40px">
+               </div>
+               <div class="copyright clearfix">
+                   <p>Copyright 2015</p>
+                   <p>All rights are reserved</p>
+               </div>
+           </div>        
+        </footer>
+    </div>
+</body>
+</html>

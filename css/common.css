@@ -1,0 +1,402 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a, a:visited{
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+body, html{
+    height: 100%;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*reset stylesheet*/
+
+.main-container{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.container{
+    position: relative;
+    min-height: 100%;
+    margin: auto;
+    width: 85%;
+    padding-bottom: 90px;
+}
+#header{
+    position: relative;
+    background-color: #22557F;
+    box-shadow: 0 1px 1px #000;
+}
+
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+
+.head-container{
+    width: 70%;
+    margin: auto;
+}
+
+.head-logo{
+    float: left;
+    padding: 5px 0 0 5px;
+    
+}
+.logo-p2{
+    -webkit-transition: transform 0.1s ;
+    -moz-transition: transform 0.1s ;
+    -ms-transition: transform 0.1s ;
+    -o-transition: transform 0.1s ;
+    transition: transform 0.1s ;
+    
+}
+
+.transformed{
+    -webkit-transform:scale(1.5)  ;
+    -moz-transform:scale(1.5)  ;
+    -ms-transform:scale(1.5)  ;
+    -o-transform:scale(1.5)  ;
+    transform:scale(1.5)  ;
+    
+   
+    
+}
+
+.auth li{ 
+    float: right;
+   
+}
+.auth li a, .mobile{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Arial Narrow';
+    font-weight:bold;
+    padding: 13px; 
+     -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.auth li a::after{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #95b0d0;
+    content: "";
+    -webkit-transition: height 0.2s ;
+    -moz-transition: height 0.2s ;
+    -ms-transition: height 0.2s ;
+    -o-transition: height 0.2s ;
+    transition: height 0.2s ;
+}
+
+.mobile{
+    display: none;
+}
+
+.auth li a:hover{
+    background-color: #4270a6;
+}
+.auth li a:hover::after{
+    height: 7px;
+}
+
+@media (max-width:1050px){
+    .head-container{
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:768px){
+    .auth li a::after{
+        display: none;
+    }
+    
+    .auth{
+        position: absolute;
+        display: none;
+        right: 0;
+        top: 100%;
+        z-index: 9999;
+    }
+    .mobile{
+        overflow: hidden;
+        position: relative;
+        display: block;
+        float: right;
+        font-size: 0;
+        height: 43px;
+        width: 43px;
+        -webkit-transition: background 0.3s ;
+        -moz-transition: background 0.3s ;
+        -ms-transition: background 0.3s ;
+        -o-transition: background 0.3s ;
+        transition: background 0.3s ;
+        
+
+    }
+    .auth li{
+        background-color: #385267 ;
+    }
+    .auth li a{
+        border-bottom: 2px solid #4270a6;
+        font-size: 12px;
+    }
+    .auth li:last-child a{
+        border-bottom: none;
+    }
+   
+    .head-logo{
+        padding: 4px 0 0 5px;
+    }
+    .auth li{
+        float: none;
+        
+    }
+    .head-container{
+        width: 100%;
+    }
+    .head-logo img{
+        height: 35px;
+        width: auto;
+    }
+    #header{
+        height: 43px;
+    }
+    
+    .mobile span{
+        display: block;
+        position: absolute;
+        top: 19px;
+        left: 6px;
+        right: 6px;
+        height: 4px;
+        background: white;
+        -webkit-transition:background 0s 0.1s ;
+        -moz-transition:background 0s 0.1s ;
+        -ms-transition:background 0s 0.1s ;
+        -o-transition:background 0s 0.1s ;
+        transition:background 0s 0.1s ;
+
+        
+    }
+    .mobile span::after, .mobile span::before{
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        content: "";
+        -webkit-transition-duration:0.1s, 0.1s ;
+        -webkit-transition-delay:0.1s, 0.1s;
+        -moz-transition-duration:0.1s, 0.1s ;
+        -moz-transition-delay:0.1s, 0.1s;
+        -ms-transition-duration:0.1s, 0.1s ;
+        -ms-transition-delay:0.1s, 0.1s;
+        -o-transition-duration:0.1s, 0.1s ;
+        -o-transition-delay:0.1s, 0.1s;
+        transition-duration:0.1s, 0.1s ;
+        transition-delay:0.1s, 0.1s;
+    }
+    
+    .mobile span::before{
+        top: -10px;
+        -webkit-transition-property: top, transform ;
+        -moz-transition-property: top, transform ;
+        -ms-transition-property: top, transform ;
+        -o-transition-property: top, transform ;
+        transition-property: top, transform ;
+    }
+    
+    .mobile span::after{
+        bottom: -10px;
+        -webkit-transition-property: bottom, transform ;
+        -moz-transition-property: bottom, transform ;
+        -ms-transition-property: bottom, transform ;
+        -o-transition-property: bottom, transform ;
+        transition-property: bottom, transform ;
+    }
+    
+    .mobile-active span{
+       background: none;
+    }
+    .mobile-active span::before{
+        top: 0;
+        -webkit-transform:rotate(45deg) ;
+        -ms-transform:rotate(45deg) ;
+        -o-transform:rotate(45deg) ;
+        -moz-transform:rotate(45deg) ;
+        transform:rotate(45deg); 
+    }
+    .mobile-active span::after{
+        bottom: 0;
+        -webkit-transform:rotate(-45deg) ;
+        -ms-transform:rotate(-45deg) ;
+        -o-transform:rotate(-45deg) ;
+        -moz-transform:rotate(-45deg) ;
+        transform:rotate(-45deg); 
+    }
+    
+    .mobile-active span::after, .mobile-active span::before{
+        -webkit-transition-delay:0s, 0.1s;
+        -moz-transition-delay:0s, 0.1s;
+        -ms-transition-delay:0s, 0.1s;
+        -o-transition-delay:0s, 0.1s;
+        transition-delay:0s, 0.1s;
+    }
+    
+}
+
+
+.main-logo{ 
+    width: 600px;
+    padding: 120px 0px 0px 0px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.main-logo img{
+    height: auto;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+ 
+}
+
+@media (max-width:860px){
+    .container{
+        width: 90%;
+    }
+    
+}
+@media (max-width:768px){
+    .container{
+        width: 95%;
+    }
+    
+    .main-logo{ 
+        width: 500px;
+    }
+
+
+}
+
+@media (max-width:600px){
+    .main-logo{ 
+        width: 380px;
+        padding: 70px 0px 0px 0px;
+    }
+
+}
+
+@media (max-width:420px){
+    .main-logo{ 
+        width: 250px;
+        padding: 50px 0px 0px 0px;
+    }
+}
+
+@media (max-width:320px){
+    .main-logo{ 
+        width: 150px;
+    }
+
+    .auth li a{
+        padding: 7px; 
+    }
+    
+}
+
+
+#footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 70px;
+    background-color: #22557F; 
+}
+
+.footer-logo{
+    float: left;
+}
+
+.p2{
+    -webkit-transform: scale(1.5) ;
+    -moz-transform: scale(1.5) ;
+    -ms-transform: scale(1.5) ;
+    -o-transform: scale(1.5) ;
+    transform: scale(1.5) ;
+}
+.copyright{
+    color: #fff;
+    display: block;
+    float: right;
+}
+
+.copyright p{
+    float: left;
+    font: 0.8em 'Arial' sans-serif; 
+    margin-right: 10px;
+}
+
+@media (max-width:620px){
+    .container{
+        padding-bottom: 140px;
+    }
+}
+
+@media (max-width:420px){
+    .footer-logo{
+        display: none;
+    }
+    .copyright p{
+        font-size: 0.7em;
+    }
+}

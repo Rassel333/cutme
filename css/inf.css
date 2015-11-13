@@ -1,0 +1,142 @@
+.main-logo{
+    padding: 0;
+}
+
+.topic{
+    text-align: center;
+    font: 2em 'FRANKLIN GOTHIC Light' sans-serif;
+    color: #22557F;
+    border-bottom: 3px solid #22557F;
+    width: 50%;
+    margin: 0 auto;
+}
+.same-topic{
+    border-bottom: 1px solid #22557F;
+    width: 100%;
+}
+.link-container, .same-link-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.link-list, .same-link-list{
+    position: relative;
+    margin: 0 auto 120px auto;
+    width: 100%;
+}
+.same-link-list{
+    display: none;
+}
+
+.shortened-link, .same-shortened-link{
+    margin: 0 auto;
+    width: 550px;
+}
+
+.url-content, .same-url-content{
+    width: 100%;
+    height: 120px;
+    background: #bee1ff;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    -webkit-transition: background 0.3s, box-shadow 0.3s ;
+    -moz-transition: background 0.3s, box-shadow 0.3s ;
+    -ms-transition: background 0.3s, box-shadow 0.3s ;
+    -o-transition: background 0.3s, box-shadow 0.3s ;
+    transition: background 0.3s, box-shadow 0.3s ;
+    border-radius: 5px;
+    padding: 25px 0 20px 20px;
+}
+.shortened-link+.shortened-link, .same-shortened-link+.same-shortened-link{
+    margin-top: 20px;
+}
+.full-link, .cut-link, .same-full-link, .same-cut-link{
+    margin-top: 10px;
+    width: 95%;
+}
+.full-link, .same-full-link{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.cut, .same-cut{
+    color: #4270a6;
+    font: 1em 'FRANKLIN GOTHIC MEDIUM' sans-serif;
+}
+.title-link, .same-title-link{
+    color: #6f6f6f;
+    font: 0.85em 'FRANKLIN GOTHIC MEDIUM' sans-serif;
+}
+    
+
+
+.info-pill, .same-info-pill{
+    display: inline-block;
+    margin: 0 2px 2px 0;
+    border: 1px solid #4270a6;
+    border-radius: 6px;
+    padding: 1px;
+}
+.tag, .same-tag{
+    display: inline-block;
+    font: 12px 'FRANKLIN GOTHIC MEDIUM' sans-serif;
+    color: #4270a6;
+}
+.selected{
+    border: 1px solid #22557F;
+    background: #e4ecf5;
+}
+.selected:hover{
+    box-shadow: none;
+}
+
+.url-info, .same-url-info{
+    margin: 0 auto;
+    color: #4270a6;
+    width: 100%;
+    border: 1px solid #22557F;
+    box-shadow: 5px 5px 5px #284055;
+    padding: 15px 15px 10px 20px;
+}
+.info-container, .same-info-container{
+    width: 100%;
+    min-height: 100px;
+}
+.info_desc, .same-info_desc{
+    font: 0.9em 'FRANKLIN GOTHIC Light' sans-serif;
+    min-height: 50px;
+    width: 100%
+}
+.info-row, .same-info-row{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 40px;
+}
+.info_tags, .same-info_tags{
+    width: 50%;
+    display: inline-block;
+    min-height: 40px;
+}
+
+@media(max-width:600px){
+    .shortened-link, .same-shortened-link{
+        width: 100%;
+    }
+    .selected{
+        width: 100%;
+    }
+    .topic, same-topic{
+        width: 100%;
+        
+    }
+}
+
+@media(max-width:380px){
+    .info_tags, .same-info_tags{
+        width: 100%
+    }
+}
